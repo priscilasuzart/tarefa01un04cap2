@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/gpio.h"
+
+#define LED_AZUL 12
+
+void BOTAO_B;
+
+    while(1) {
+        char tecla = ler_teclado(); // Lê a tecla pressionada
+        if (tecla == 'B');
+        {
+            gpio_put(LED_AZUL, 1); // Acende o led azul
+        } else {
+            gpio_put(LED_AZUL, 0); // Desliga o led azul
+        }
+        sleep_ms(2000);
+    }
+    
