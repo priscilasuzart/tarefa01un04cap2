@@ -19,7 +19,7 @@ void liga_azulVerde() { // Função para ligar o led azul e verde
         }
 }
 
-void desliga_azulVerde() {
+void desliga_azulVerde() { // Função para desligar o led azul e verde
 
         gpio_init(LED_VERDE);
         gpio_set_dir(LED_VERDE, GPIO_OUT);
