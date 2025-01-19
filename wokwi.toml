@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/codigo.uf2'
-elf = 'build/codigo.elf'
