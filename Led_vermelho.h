@@ -10,18 +10,17 @@
 void liga_BOTAO_A () {
         gpio_init(LED_VERMELHO);
         gpio_set_dir(LED_VERMELHO, GPIO_OUT);
-          while(1){     
-                gpio_put(LED_VERMELHO, 1); //Liga o LED vermelho
-          }
+              
+        gpio_put(LED_VERMELHO, 1); //Liga o LED vermelho
+          
 }
 
 void desliga_BOTAO_A(){
-        gpio_init(LED_VERMELHO);
-        gpio_set_dir(LED_VERMELHO, GPIO_OUT);  
-                while (1) {
+        
+                
 
-                gpio_put(LED_VERMELHO, 0); // Desliga o LED vermelho
-                }
+        gpio_put(LED_VERMELHO, 0); // Desliga o LED vermelho
+                
 }
 
                

@@ -9,16 +9,17 @@
 void liga_BUZZER() {
         gpio_init(BUZZER);
         gpio_set_dir(BUZZER, GPIO_OUT);
-          while(1){     
-                gpio_put(BUZZER, 1); //Liga o buzzer
-          }
+            
+        gpio_put(BUZZER, 1); //Liga o buzzer
+        
+          
 }
 
 void desliga_BUZZER(){
         gpio_init(BUZZER);
         gpio_set_dir(BUZZER, GPIO_OUT);  
-                while (1) {
+        
 
-                gpio_put(BUZZER, 0); // Desliga o buzzer
-                }
+        gpio_put(BUZZER, 0); // Desliga o buzzer
+                
 }

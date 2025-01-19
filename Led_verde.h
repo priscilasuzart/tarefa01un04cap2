@@ -8,17 +8,16 @@ void ligarledverde() {
 
     gpio_init(led_pin_verde);
     gpio_set_dir(led_pin_verde, GPIO_OUT);
-    while(1) {
-        gpio_put(led_pin_verde, 1);
-    }
+    
+    gpio_put(led_pin_verde, 1);
+    
 }
 
 void desligarledverde() {
 
-    gpio_init(led_pin_verde);
-    gpio_set_dir(led_pin_verde, GPIO_OUT);
-    while (1) {
-        gpio_put(led_pin_verde,0);
-    }
+    
+    
+    gpio_put(led_pin_verde,0);
+    
     
 }

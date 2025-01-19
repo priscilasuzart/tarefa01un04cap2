@@ -8,7 +8,7 @@
 #include "Led_AzulVerde.h"
 #include "Led_VerdeVermelho.h"
 #include "Led_AzulVermelho.h"
-
+#include "Led_verde.h"
 
 
 #define LED_VERDE 11 // Pino do LED verde
@@ -58,28 +58,7 @@ char ler_teclado(){ //Declara a função chamada ler_teclado que retorna um valo
 }
 
 // Função para desligar todos os LEDs e o buzzer
-void desliga_todos() {
-    gpio_put(LED_VERDE, 0);
-    gpio_put(LED_AZUL, 0);
-    gpio_put(LED_VERMELHO, 0);
-    gpio_put(BUZZER, 0);
-}
 
-void liga_azulVerde() { // Função para ligar o led azul e verde
-
-        gpio_init(LED_VERDE);
-        gpio_set_dir(LED_VERDE, GPIO_OUT);
-        gpio_init(LED_AZUL);
-        gpio_set_dir(LED_AZUL, GPIO_OUT);
-       
-                gpio_put(LED_VERDE, 1);
-                gpio_put(LED_AZUL, 1);
-
-                sleep_ms(10000); // Aguarda 10 segundos
-
-                gpio_put(LED_VERDE, 0); // Desliga o LED verde
-                gpio_put(LED_AZUL, 0);  // Desliga o LED azul
-        }
 
 
 
@@ -91,39 +70,60 @@ int main()
 
         while (1) {
         char tecla = ler_teclado();
-        desliga_todos();
+        
 
         switch(tecla){
+                
+
+
             case 'A':
             liga_BOTAO_A ();
+            printf("Botão A pressionado\n");
             break;
 
             case 'B':
             liga_BOTAO_B();
+            printf("Botão B pressionado\n");
             break;
 
             case 'C':
+            ligarledverde();
+            printf("Botão C pressionado\n");
             break;
                        
             case 'D':
             ligarLeds();
+            printf("Botão D pressionado\n");
+            break;
+
+            case '#':
+            liga_BUZZER();
+            printf("Botão # pressionado\n");
             break;
 
             case '1':
             liga_azulVerde();
+            printf("Botão 1 pressionado\n");
             break;
 
             case '2':
             liga_VermelhoVerde();
+            printf("Botão 2 pressionado\n");
             break;
 
             case '3':
             tecla3_liga();
+            printf("Botão 3 pressionado\n");
             break;           
+
+            case '\0':
+            desligarLeds();
+            printf("Nenhuma tecla pressionada\n");
+            break;
 
             default:
             break;
         }
-        sleep_ms(200);
+        sleep_ms(1000);
     }
 }

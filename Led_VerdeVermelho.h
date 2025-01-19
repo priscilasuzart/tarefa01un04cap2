@@ -12,22 +12,19 @@ void liga_VermelhoVerde() { // Função para ligar o LED Verde e Vermelho
         gpio_set_dir(LED_VERDE, GPIO_OUT);
         gpio_init(LED_VERMELHO);
         gpio_set_dir(LED_VERMELHO, GPIO_OUT);
-        while (1) {
-                gpio_put(LED_VERDE, 1);
-                gpio_put(LED_VERMELHO, 1);
+        
+        gpio_put(LED_VERDE, 1);
+        gpio_put(LED_VERMELHO, 1);
                 
-        }
+        
 }
 
 void desliga_VermelhoVerde() { // Função para desligar o LED Verde e Vermelho
 
-        gpio_init(LED_VERDE);
-        gpio_set_dir(LED_VERDE, GPIO_OUT);
-        gpio_init(LED_VERMELHO);
-        gpio_set_dir(LED_VERMELHO, GPIO_OUT);
-        while (1) {
-                gpio_put(LED_VERDE, 0);
-                gpio_put(LED_VERMELHO, 0);
+        
+        
+        gpio_put(LED_VERDE, 0);
+        gpio_put(LED_VERMELHO, 0);
                 
-        }
+        
 }
