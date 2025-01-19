@@ -15,7 +15,7 @@ Tecla 2: acende os LEDS vermelho e verde
 Tecla 3: acende os LEDS vermelho e azul  
 OBS:      
 1) Para o correto funcionamento, a tecla escolhida deverá ser mantida pressionada. Será imprimido no terminal qual a tecla que está pressionada;
-2) Caso não seja pressionanda nenhuma tecla, ficará sendo apresentado no terminal a mensagem "Nenhuma tecla pressionda" até que seja pressionada alguma.  
+2) Caso não seja pressionada nenhuma tecla, ficará sendo apresentado no terminal a mensagem "Nenhuma tecla pressionada" até que seja pressionada alguma.  
 
 Componentes necessários:
 1) Teclado matricial 4x4
@@ -37,7 +37,8 @@ Exemplo de execução:
 Entrada: Usuário pressiona a tecla ‘A’  
 Saída: o LED vermelho, conectado ao GPIO 13, é aceso  
 
-Link para o vídeo ensaio:  
+Link para o vídeo ensaio (abrir com Windows Media Player Legacy):     
+https://drive.google.com/file/d/1I9j8FmdnCwW6t41Wdh715rhSN2-4aVkC/view?usp=sharing 
 
 
 Projeto desenvolvido por:   
