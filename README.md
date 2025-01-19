@@ -13,7 +13,10 @@ Tecla #: aciona o buzzer
 Tecla 1: acende os LEDs azul e verde  
 Tecla 2: acende os LEDS vermelho e verde  
 Tecla 3: acende os LEDS vermelho e azul  
-Ao final de cada interação, todos os LEDs e o buzzer são desligados antes de uma nova ação ser realizada.
+OBS:      
+1) Para o correto funcionamento, a tecla deve ser mantida pressionada. Será imprimido no terminal qual a tecla que está pressionada;
+2) Caso não seja pressionanda nenhuma tecla, ficará sendo apresentado no terminal a mensagem "Nenhuma tecla pressionda" até que seja pressionada alguma.  
+3) Ao final de cada interação, todos os LEDs e o buzzer são desligados antes de uma nova ação ser realizada.
 
 Componentes necessários:
 1) Teclado matricial 4x4
